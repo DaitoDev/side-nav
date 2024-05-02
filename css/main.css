@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #b5179e;
+  font-weight: bold;
+}
+
+.link-item:hover {
+  cursor: pointer;
+  color: #f72585;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+html {
+  font-family: "Golos Text", sans-serif;
+  color: white;
+  min-width: 320px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background-image: linear-gradient(to right, #410938, #10002b);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  min-width: 320px;
+}
+.container .side-bar {
+  flex-grow: 0.1;
+  background-color: #240046;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0.5rem 1rem 1rem;
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.4117647059);
+}
+.container .side-bar .logo {
+  margin-top: 1rem;
+}
+.container .side-bar .sidebar-nav {
+  position: relative;
+}
+.container .side-bar .sidebar-nav .nav-icons, .container .side-bar .sidebar-nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.container .side-bar .sidebar-nav .nav-links {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .toggle-nav {
+  padding-right: 7rem;
+}
+.container .toggle-nav .sidebar-nav .nav-links {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.container main {
+  flex-grow: 11;
+  text-align: center;
+  padding: 1rem;
+}
+.container main h1 {
+  margin-top: 5rem;
+}/*# sourceMappingURL=main.css.map */
